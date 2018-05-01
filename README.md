@@ -1,0 +1,4 @@
+This directory includes useful tutorials and resources for working in the Capra lab.
+
+## Jupyter Tutorial
+The static version of it can be viewed at [here](http://nbviewer.jupyter.org/github/CapraLab/resources/blob/master/tutorials/jupyter_tutorial/jupyter_tutorial.html).
