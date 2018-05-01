@@ -1,0 +1,734 @@
+To open a tunnel from local machine,
+Execute in a new terminal window:
+ssh -L 9999:vmp1046:7777 bentonml@login.accre.vanderbilt.edu
+================================================================================
+[I 15:55:30.774 NotebookApp] Starting buffering for 1b7ddcd5-0b93-43bb-9e43-085966ddb807:c6b9645af98e42198baf98a7edd7db35
+[I 15:55:34.597 NotebookApp] Kernel shutdown: 1b7ddcd5-0b93-43bb-9e43-085966ddb807
+slurmstepd: error: *** JOB 27002127 ON vmp1015 CANCELLED AT 2018-05-01T15:57:03 ***
+[I 15:58:49.971 NotebookApp] [nb_conda_kernels] enabled, 4 kernels found
+[W 15:58:59.878 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 15:59:01.785 NotebookApp] [nb_conda] enabled
+[I 15:59:01.800 NotebookApp] Serving notebooks from local directory: /dors/capra_lab/resources/tutorials/jupyter_tutorial
+[I 15:59:01.800 NotebookApp] 0 active kernels
+[I 15:59:01.800 NotebookApp] The Jupyter Notebook is running at:
+[I 15:59:01.800 NotebookApp] http://[all ip addresses on your system]:7777/?token=7ccf80d7b8c2be193284e6886c1b30975f377d5675bc4afc
+[I 15:59:01.800 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 15:59:01.804 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:7777/?token=7ccf80d7b8c2be193284e6886c1b30975f377d5675bc4afc
+[I 15:59:16.502 NotebookApp] 302 GET / (10.0.20.242) 0.77ms
+[W 15:59:23.679 NotebookApp] Notebook jupyter_tutorial.ipynb is not trusted
+[I 15:59:23.866 NotebookApp] 302 GET /notebooks/img/jupyter_logo.png (10.0.20.242) 7.96ms
+[I 15:59:24.022 NotebookApp] 302 GET /notebooks/img/jupyter_landing.png (10.0.20.242) 2.65ms
+[I 15:59:24.201 NotebookApp] 302 GET /notebooks/img/jupyter_kernelname.png (10.0.20.242) 2.74ms
+[I 15:59:24.204 NotebookApp] 302 GET /notebooks/img/jupyter_choosekernel.png (10.0.20.242) 2.05ms
+[I 15:59:26.132 NotebookApp] Kernel started: cadef4cc-a340-4aac-a07a-0f05a6a5b328
+[W 15:59:26.539 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20180501155850 (10.0.20.242) 30.42ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 15:59:27.080 NotebookApp] Adapting to protocol v5.1 for kernel cadef4cc-a340-4aac-a07a-0f05a6a5b328
+[I 16:01:25.689 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[W 16:01:25.690 NotebookApp] Notebook jupyter_tutorial.ipynb is not trusted
+[E 16:01:25.751 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:01:25.911 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:01:25.920 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:01:25.921 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "163807",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:01:25.921 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 241.49ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:03:30.876 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[W 16:03:30.878 NotebookApp] Notebook jupyter_tutorial.ipynb is not trusted
+[E 16:03:30.947 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:03:30.948 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:03:30.948 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:03:30.949 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "50383",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:03:30.956 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 76.63ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:05:28.073 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 16:05:28.607 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:05:28.610 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:05:28.611 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:05:28.611 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26604",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:05:28.617 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 540.46ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:06:10.131 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 16:06:10.556 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:06:10.557 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:06:10.558 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:06:10.559 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26604",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:06:10.559 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 428.60ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:06:10.562 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 16:06:11.325 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:06:11.326 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:06:11.326 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:06:11.327 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26291",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:06:11.327 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 766.16ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:10:10.550 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 16:10:10.845 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:10:10.846 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:10:10.846 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:10:10.846 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26604",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:10:10.846 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 298.13ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:10:10.849 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 16:10:11.048 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:10:11.049 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:10:11.050 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:10:11.050 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26291",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:10:11.050 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 202.63ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:10:11.052 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 16:10:11.320 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:10:11.321 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:10:11.322 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:10:11.322 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26291",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:10:11.322 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 270.97ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:10:11.324 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 16:10:11.539 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:10:11.539 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:10:11.554 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:10:11.555 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26291",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:10:11.555 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 231.42ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:11:28.473 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 16:11:42.624 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:11:42.628 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:11:42.628 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:11:42.635 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26604",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:11:42.635 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 14164.38ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:11:42.645 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 16:11:54.538 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:11:54.539 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:11:54.539 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:11:54.539 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26291",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:11:54.540 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 11895.89ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:11:54.550 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 16:12:05.864 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:12:05.864 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:12:05.864 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:12:05.865 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26291",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:12:05.865 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 11316.66ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:12:05.867 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 16:12:10.775 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:12:10.776 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:12:10.776 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:12:10.777 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26291",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:12:10.777 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 4910.77ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 16:12:10.779 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 16:12:26.153 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:12:26.153 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 16:12:26.153 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 16:12:26.154 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26291",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 16:12:26.154 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 15376.25ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 17:18:31.398 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 17:18:31.827 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 17:18:31.831 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 17:18:31.832 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 17:18:31.832 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26604",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 17:18:31.832 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 435.64ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 17:18:31.834 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 17:18:33.152 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 17:18:33.153 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 17:18:33.153 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 17:18:33.154 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26291",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 17:18:33.154 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 1320.31ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 17:18:33.156 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 17:18:33.846 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 17:18:33.846 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 17:18:33.846 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 17:18:33.847 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26291",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 17:18:33.847 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 692.31ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 17:18:33.849 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 17:18:35.176 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 17:18:35.177 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 17:18:35.177 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 17:18:35.178 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26291",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 17:18:35.178 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 1329.60ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 17:18:35.180 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 17:18:35.379 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 17:18:35.380 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 17:18:35.380 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 17:18:35.381 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "26291",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 17:18:35.381 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 201.95ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 17:18:35.384 NotebookApp] Saving file at /jupyter_tutorial.ipynb
+[E 17:18:35.504 NotebookApp] Error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+    Traceback (most recent call last):
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 459, in save
+        self.create_checkpoint(path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 514, in create_checkpoint
+        return self.checkpoints.create_checkpoint(self, path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/filecheckpoints.py", line 56, in create_checkpoint
+        self._copy(src_path, dest_path)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 241, in _copy
+        copy2_safe(src, dest, log=self.log)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 51, in copy2_safe
+        shutil.copyfile(src, dst)
+      File "/home/bentonml/.conda/envs/capra_py3/lib/python3.6/shutil.py", line 121, in copyfile
+        with open(dst, 'wb') as fdst:
+    PermissionError: [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 17:18:35.505 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242): Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[W 17:18:35.505 NotebookApp] Unexpected error while saving file: jupyter_tutorial.ipynb [Errno 13] Permission denied: '/dors/capra_lab/resources/tutorials/jupyter_tutorial/.ipynb_checkpoints/jupyter_tutorial-checkpoint.ipynb'
+[E 17:18:35.506 NotebookApp] {
+      "Host": "localhost:9999",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261",
+      "Accept-Language": "en-us",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Type": "application/json",
+      "Origin": "http://localhost:9999",
+      "Content-Length": "227453",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15",
+      "Referer": "http://localhost:9999/notebooks/jupyter_tutorial.ipynb",
+      "Dnt": "1",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-9999=\"2|1:0|10:1525207022|23:username-localhost-9999|44:ZGQwOWNkZjVmMDY0NGM0M2FlMGZkOTU5ZDExMTA0NTI=|5dcb4293981771b2a2135749e598df08a5f72f330aec83b6d1bc85184aacb40e\"; username-localhost-8888=\"2|1:0|10:1525182109|23:username-localhost-8888|44:ZmIzM2U2MGJkZjcyNDZjZmFkYzU0NGNlMGNmNWI5ZTE=|96c565d81697f912bcb355e852ed85ff342c2fb135a77f55a7065f44df76a3bf\"; _xsrf=2|3bddef36|937093c9caabaef98be591a2b17d14aa|1524797261; username-localhost-8889=\"2|1:0|10:1523311495|23:username-localhost-8889|44:MjE4YjQ3NWFkMjMyNGIxZWJkOGZhM2U5NmFkNGVkZDI=|122e2647f28e048c8801cba22ab7d66171d41832f9592f6c21789eca5f74d25b\""
+    }
+[E 17:18:35.506 NotebookApp] 500 PUT /api/contents/jupyter_tutorial.ipynb (10.0.20.242) 124.00ms referer=http://localhost:9999/notebooks/jupyter_tutorial.ipynb
+[I 17:18:38.189 NotebookApp] Starting buffering for cadef4cc-a340-4aac-a07a-0f05a6a5b328:0795c906764b4abfbf929bd7cd5b113f
+[I 17:18:39.698 NotebookApp] Kernel shutdown: cadef4cc-a340-4aac-a07a-0f05a6a5b328
+slurmstepd: error: *** JOB 27016535 ON vmp1046 CANCELLED AT 2018-05-01T17:19:26 ***
