@@ -6,3 +6,5 @@ The static version of it can be viewed at [here](http://nbviewer.jupyter.org/git
 ## Git + Github tutorial 
 [presentation](https://github.com/CapraLab/resources/blob/master/tutorials/git_github_tutorial/giterdone_git_tutorial.pdf) and [cheatsheet](https://github.com/CapraLab/resources/blob/master/tutorials/git_github_tutorial/git-cheatsheet.pdf)
 
+## ACCRE virtual environment tutorial
+[presentation](https://github.com/CapraLab/resources/blob/master/tutorials/ACCRE%20Environments.pdf)
