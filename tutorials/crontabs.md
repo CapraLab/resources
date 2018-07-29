@@ -8,9 +8,10 @@ One use for this that we have discussed is to set up nightly automatic commits f
 Type ```crontab -e``` to edit your crontabs.
 
 Enter and save this text:
-> ```MAILTO=""```
->
-> ```1 4 * * * cd /dors/capra_lab/projects/enhancer_uniqueness && /usr/local/git/latest/x86_64/gcc46/nonet/bin/git -a -m "daily auto-commit: `date`"```
+```bash
+MAILTO=""
+1 4 * * * cd /dors/capra_lab/projects/enhancer_uniqueness && /usr/local/git/latest/x86_64/gcc46/nonet/bin/git -a -m "daily auto-commit: `date`"
+```
 
 This sets up a crontab to run every night at 4:01am that will commit all edited tracked files in the ```enhancer_uniqueness``` project directory with a timestamped message.
 
