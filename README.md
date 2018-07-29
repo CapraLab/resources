@@ -1,4 +1,6 @@
-This directory includes useful tutorials and resources for working in the Capra lab. It can also be found on ACCRE at ```/dors/capra_lab/resources/```
+This directory includes useful tutorials and resources for working in the Capra lab. It can also be found on ACCRE at ```/dors/capra_lab/resources/```.
+
+See an overall Intro to the Capra Lab [here](https://github.com/CapraLab/resources/blob/master/WelcomeInfo.md).
 
 ## Tutorials
 ### Safe ```rm``` on ACCRE
