@@ -26,8 +26,16 @@ for a grant or a proposal
 [Use fine-grained sectioning in your grant proposals](http://serialmentor.com/blog/2013/10/28/use-fine-grained-sectioning-in-your-grant-proposals)\
 [Writing](https://my.vanderbilt.edu/irishlab/internal/writing/) by the Irish Lab
 
+[NIH Mendeley Style](https://github.com/CapraLab/resources/blob/master/external_resources/linked_files/vancouver-brackets-all-authors)
+
 Examples:\
 [NIH Applications](https://www.niaid.nih.gov/grants-contracts/sample-applications)\
 [Specific Aims Template](https://github.com/CapraLab/resources/blob/master/external_resources/linked_files/Specific_Aims_Template.pdf)\
 [Successful Applications](https://github.com/RILAB/statements)\
 [Publically-avaiable list](https://jabberwocky.weecology.org/2012/08/10/a-list-of-publicly-available-grant-proposals-in-the-biological-sciences/)
+
+### Fun Stuff
+[Interviews with Notable Bioinformaticians](http://www.acgt.me/blog/2014/3/25/101-questions-a-new-series-of-interviews-with-notable-bioinformaticians)\
+[xkcd](https://xkcd.com/)- A webcomic of romance, sarcasm, math, and language (with CS and science thrown in)\
+[Piled Higher and Deeper](http://phdcomics.com/)- the comic strip about life (or the lack thereof) in academia\
+[Fun Stuff](http://yann.lecun.com/ex/fun/)
