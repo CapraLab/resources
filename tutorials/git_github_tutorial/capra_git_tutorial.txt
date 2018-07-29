@@ -1,0 +1,205 @@
+# http://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+
+[capraja@chgr2 ~]$ git config --global user.name "Tony Capra"
+[capraja@chgr2 ~]$ git config --global user.email tony.capra@vanderbilt.edu
+
+[capraja@chgr2 ~]$ pwd
+/home/capraja
+
+[capraja@chgr2 ~]$ cd /dors/capra_lab/projects/sirtuins/
+[capraja@chgr2 sirtuins]$ ll
+total 2
+drwxrwx---+ 2 capraja capra_lab 2048 Apr 13 13:25 bin
+-rw-rw----+ 1 capraja capra_lab  298 Jan 29  2014 COMMANDS
+drwxrwx---+ 5 capraja capra_lab  512 May  5 13:23 data
+drwxrwx---+ 9 capraja capra_lab  512 Apr 16 00:49 results
+drwxrwx---+ 3 capraja capra_lab  512 Apr 16 00:49 temp
+[capraja@chgr2 sirtuins]$
+
+# Initialize a repository from an existing directory:
+[capraja@chgr2 sirtuins]$ git init
+Initialized empty Git repository in /dors/capra_lab/projects/sirtuins/.git/
+# This may take a little time.
+[capraja@chgr2 sirtuins]$ ls -la
+total 68
+drwxrws---+ 7 capraja capra_lab  2048 May 21 00:40 .
+drwxrws---+ 4 capraja capra_lab   512 Apr 12 21:34 ..
+drwxrwx---+ 2 capraja capra_lab  2048 Apr 13 13:25 bin
+-rw-rw----+ 1 capraja capra_lab   298 Jan 29  2014 COMMANDS
+drwxrwx---+ 5 capraja capra_lab   512 May  5 13:23 data
+-rw-rw----+ 1 capraja capra_lab  4096 Apr 12 15:31 ._.DS_Store
+-rw-rw----+ 1 capraja capra_lab 15364 May  6 12:44 .DS_Store
+drwxrws---+ 7 capraja capra_lab   512 May 21 00:41 .git
+drwxrwx---+ 9 capraja capra_lab   512 Apr 16 00:49 results
+drwxrwx---+ 3 capraja capra_lab   512 Apr 16 00:49 temp
+[capraja@chgr2 sirtuins]$
+
+# http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+# Start adding files to the respository.
+
+[capraja@chgr2 sirtuins]$ git add bin/*
+[capraja@chgr2 sirtuins]$ git add results/*
+[capraja@chgr2 sirtuins]$ git add COMMANDS 
+
+# All these files are now "tracked." Tracked files can either be unmodified, modified, or staged. These are now staged.
+# In general, you shouldn't add the data directory.
+
+# You can check the current status of all files:
+[capraja@chgr2 sirtuins]$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   COMMANDS
+#	new file:   bin/group_sim_sdp_v2.0.py~
+#	new file:   bin/map_scores_to_temp_factor.py
+#	new file:   bin/map_scores_to_temp_factor.py~
+#	new file:   bin/sirtuin_tree_analysis.py
+#	new file:   bin/sirtuin_tree_analysis.py~
+#	new file:   results/concavity/3GLS_A_coords_A_concavity.scores
+#	new file:   results/concavity/3GLS_A_coords_A_concavity_vol05.scores
+<snip>
+#	new file:   results/sirtuins_phylo/table_s1_mito_homologs-mito-only.tab
+#	new file:   results/sirtuins_phylo/table_s1_mito_homologs-none.tab
+#	new file:   results/sirtuins_phylo/temp.py
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.DS_Store
+#	._.DS_Store
+#	data/
+#	results/.DS_Store
+#	results/._.DS_Store
+#	temp/
+[capraja@chgr2 sirtuins]$ git commit -m 'initial project version'
+[master (root-commit) d47413e] initial project version
+ 353 files changed, 1822179 insertions(+)
+ create mode 100644 COMMANDS
+ create mode 100644 bin/group_sim_sdp_v2.0.py~
+ create mode 100755 bin/map_scores_to_temp_factor.py
+ create mode 100644 bin/map_scores_to_temp_factor.py~
+ create mode 100755 bin/sirtuin_tree_analysis.py
+ create mode 100755 bin/sirtuin_tree_analysis.py~
+ create mode 100644 results/concavity/3GLS_A_coords_A_concavity.scores
+# <snip>
+ create mode 100644 results/sirtuins_phylo/table_s1.tab
+ create mode 100644 results/sirtuins_phylo/table_s1_mito_homologs-both.tab
+ create mode 100644 results/sirtuins_phylo/table_s1_mito_homologs-mito-only.tab
+ create mode 100644 results/sirtuins_phylo/table_s1_mito_homologs-none.tab
+ create mode 100755 results/sirtuins_phylo/temp.py
+
+[capraja@chgr2 sirtuins]$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.DS_Store
+#	._.DS_Store
+#	data/
+#	results/.DS_Store
+#	results/._.DS_Store
+#	temp/
+nothing added to commit but untracked files present (use "git add" to track)
+[capraja@chgr2 sirtuins]$ 
+
+# Now the project data are in the git repository.
+
+# Now let's add a new file:
+[capraja@chgr2 sirtuins]$ echo 'This directory contains various analyses of the sirtuins.' > README
+[capraja@chgr2 sirtuins]$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.DS_Store
+#	._.DS_Store
+#	README
+#	data/
+#	results/.DS_Store
+#	results/._.DS_Store
+#	temp/
+nothing added to commit but untracked files present (use "git add" to track)
+
+[capraja@chgr2 sirtuins]$ git add README
+[capraja@chgr2 sirtuins]$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   README
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.DS_Store
+#	._.DS_Store
+#	data/
+#	results/.DS_Store
+#	results/._.DS_Store
+#	temp/
+[capraja@chgr2 sirtuins]$
+
+# NOW AN IMPORTANT LESSON IN MODIFIED VS STAGED:
+[capraja@chgr2 sirtuins]$git [capraja@chgr2 sirtuins]$ git add COMMANDS 
+[capraja@chgr2 sirtuins]$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   COMMANDS
+#	new file:   README
+
+[capraja@chgr2 sirtuins]$ git commit -m 'added better documentation'
+[master 9fa78c0] added better documentation
+ 2 files changed, 3 insertions(+)
+ create mode 100644 README
+
+# UH-OH, WHAT IF MY LAST COMMIT WAS BAD?
+# VIEWING COMMIT HISTORY
+[capraja@chgr2 sirtuins]$ git log
+commit 9fa78c0a5628f3bcaab1dab01b3dab171a030fc9
+Author: Tony Capra <tony.capra@vanderbilt.edu>
+Date:   Thu May 21 01:00:37 2015 -0500
+
+    added better documentation
+
+commit d47413e8ae756707f2d8d21b780a7e39900fbcbb
+Author: Tony Capra <tony.capra@vanderbilt.edu>
+Date:   Thu May 21 00:48:08 2015 -0500
+
+    initial project version
+
+# You can revert to an older version of a file with checkout:
+[capraja@chgr2 sirtuins]$ git checkout d47413e COMMANDS 
+[capraja@chgr2 sirtuins]$ more COMMANDS 
+./sirtuin_tree_analysis.py data/named_sirtuins_full_align.fasta data/named_sirtuins_full_align.newick >named_sirtuins_full_align_by_class.fasta
+
+./bin/map_scores_to_temp_factor.py results/sdp/sirt4_class2_notclass2_sdp.tab data/pdb/SIRT4.pdb >results/sdp/pdb_mapped/SIRT4_class2_notclass2_sdp.pdb 
+
+# Note that this will OVERWRITE the version of this file in the project and stage it for commit. Everything that you have done to the file since the last commit will be lost!
+
+# You can also undo ("revert") a commit or return ("reset") to a previous state of the project.
+# See revert and reset commands.
+
+# For help and examples, start with:
+# http://git-scm.com/book/en/v2
+# https://www.atlassian.com/git/tutorials
+
+################################################################################
+
+# SKIPPING STAGING:
+git commit -a ... # makes Git automatically stage every file that is already tracked before doing the commit,
+
+# REMOVING FILES FROM THE REPO:
+# Use: git rm <file>
+# Plain rm won't work, why"
+
+# IGNORING FILES
+Create .gitignore
+
+# CLONING AN EXISTING LIBRARY
+# $ git clone https://github.com/libgit2/libgit2
