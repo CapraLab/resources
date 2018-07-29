@@ -25,6 +25,12 @@ Tips and tricks for using Github for version-control\
 presented originally by Greg Sliwoski\
 [presentation](https://github.com/CapraLab/resources/blob/master/tutorials/git_github_tutorial/giterdone_git_tutorial.pdf) and [cheatsheet](https://github.com/CapraLab/resources/blob/master/tutorials/git_github_tutorial/git-cheatsheet.pdf)
 
+Tony's old tutorial [here](https://github.com/CapraLab/resources/blob/master/tutorials/git_github_tutorial/capra_git_tutorial.txt)
+
+Good external tutorials:
+- [Atlassian](https://www.atlassian.com/git/tutorials/)
+- [Pro Git](http://git-scm.com/book/en/v2/)
+
 ### crontabs tutorial
 how to run jobs automatically\
 [here](https://github.com/CapraLab/resources/blob/master/tutorials/crontabs.md)
