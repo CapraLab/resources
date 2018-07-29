@@ -2,7 +2,7 @@ This directory includes useful tutorials and resources for working in the Capra 
 
 ## Tutorials
 ### Safe ```rm``` on ACCRE
-learn how to safely delete files on ACCRE\ 
+learn how to safely delete files on ACCRE\
 [how-to](https://github.com/CapraLab/resources/blob/master/tutorials/safer_rm.md)
 
 ### SLURM Scheduling
