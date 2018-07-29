@@ -10,14 +10,17 @@
      - Sublime Text (text editing)
      - Conda (virtual environments)
      - IPython/Jupyter (interactive coding)
- Numpy, Scipy are also very useful if you use python. [Conda](https://store.continuum.io/cshop/anaconda/) has all of those and other common python things. Installation is free.
+     
+Numpy, Scipy are also very useful if you use python. [Conda](https://store.continuum.io/cshop/anaconda/) has all of those and other common python things, as well as packages and installations for other languages. Installation is free.
 
 ## If you want to use ACCRE:
 1. Get ACCRE account
   See computing section in “Introduction to the Capra Lab” [Note](https://github.com/CapraLab/resources/blob/master/WelcomeInfo.md).
 2. Get SAMBA access (If you didn’t get it from the first step.)
   To use SAMBA, select "Connect to Server" under the "Go" menu when on the Desktop, and then enter the server address. The short cut is cmd-K.
+  
   To access the capra_lab DORS space use this address: ```smb://mako-smb.its.vanderbilt.edu/capra_lab``` and your VUnet ID. The password for DORS is the e-password, not the ACCRE password.
+  
   To access your personal ACCRE directory:Open a helpdesk request on ACCRE website. Include the information of what directories need to be mounted to the local computer via SAMBA. A email contains the temporary SAMBA password and the server address will come. (smb://samba.accre.vanderbilt.edu/<VUnetID>)
 3. ACCRE Usage
   Work directly on ACCRE:
