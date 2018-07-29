@@ -22,8 +22,7 @@ Your ACCRE account is associated with a small amount of storage. However, since 
 
 You should now also be able to access ```/dors/capra_lab``` via the "Map Network Drive" in Windows with the address ```\\mako-smb.its.vanderbilt.edu\capra_lab``` or under the "Connect to Server…" menu item in the Mac Finder with the address ( ). This will give you access to the same directories you find on the linux servers at ```/dors/capra_lab```.
 
-When you're working on the linux servers, if you find that you don't have access to a piece of software or a package that you need, you may just need to configure your account to use it. See ACCRE's page on [lmod](https://www.vanderbilt.edu/accre/documentation/lmod/) for instructions on how to search and load packages. 
-
+When you're working on the linux servers, if you find that you don't have access to a piece of software or a package that you need, you may just need to configure your account to use it. See ACCRE's page on [Lmod](https://www.vanderbilt.edu/accre/documentation/lmod/) for instructions on how to search and load packages. 
 
 ## PRINTING
 There's a new color duplex printer in the lab. It can also scan and copy. For its IP address and info on setting it up, see the notecard above the printers.
@@ -45,7 +44,6 @@ People in the lab are very friendly and eager to help, but please be respectful 
 
 
 ## COMING SOON:
-Lab Intro:
 - different programming languages: what should I learn for genetics?
 - hierarchy of the journals
 - glossary
