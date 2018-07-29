@@ -10,8 +10,8 @@ The script ```trash.pl``` in ```/dors/capra_lab/bin``` acts like the command ```
 
 
 In order to use this script, make sure that the ```/dors/capra_lab/bin``` directory is in your ```PATH``` variable. (If that doesn't make sense, google "setting unix path variable".) Then, add the following lines to the file ```.bashrc``` in your ACCRE home directory:
-```alias rm="trash.pl"```
-```alias rrm="'rm'"```
+> ```alias rm="trash.pl"```
+> ```alias rrm="'rm'"```
 
 The ```.bashrc``` file is read and executed every time you start a new shell (more or less). 
 
