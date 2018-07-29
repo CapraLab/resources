@@ -1,6 +1,8 @@
 # Tutorials for Statistics
 
 ## Basics
+[What Statistical test to run when](https://github.com/CapraLab/resources/blob/master/external_resources/linked_files/stat_test_cheat_sheet.pdf)\
+[Confusion Matrix:](https://github.com/CapraLab/resources/blob/master/external_resources/linked_files/confusion_matrix_cheat_sheet.pdf)- TPR, FPR, ROC, etc.\
 [Handbook of Biological Statistics](https://udel.edu/~mcdonald/HandbookBioStat.pdf)\
 [Think Bayes](http://www.greenteapress.com/thinkbayes/thinkbayes.pdf)- Bayesian Statistics Made Simple\
 [Handbook on Distributions](http://www.stat.rice.edu/~dobelman/textfiles/DistributionsHandbook.pdf)\
@@ -10,9 +12,9 @@
 
 ## Specific Methods
 [How to Interpret a p-value histogram](http://varianceexplained.org/statistics/interpreting-pvalue-histogram/)\
-[Loess Smoothing](https://simplystatistics.org/2014/02/13/loess-explained-in-a-gif/)\
 [PCA](http://www.cs.otago.ac.nz/cosc453/student_tutorials/principal_components.pdf)\
-[t-SNE](https://distill.pub/2016/misread-tsne/)- for exploring high-dimensional data\
+[Loess Smoothing](https://simplystatistics.org/2014/02/13/loess-explained-in-a-gif/)\
+[t-SNE](https://distill.pub/2016/misread-tsne/) and [multicore implementation](https://github.com/DmitryUlyanov/Multicore-TSNE)- for exploring high-dimensional data\
 [Gaussian Processes](https://betanalpha.github.io/assets/case_studies/gp_part1/part1.html)
 
 ## Machine Learning
