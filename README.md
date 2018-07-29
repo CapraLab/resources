@@ -3,6 +3,10 @@ This directory includes useful tutorials and resources for working in the Capra 
 See an overall Intro to the Capra Lab [here](https://github.com/CapraLab/resources/blob/master/WelcomeInfo.md).
 
 ## Tutorials
+### Project directory structure
+Tony's rules on how to set up a project directory
+[here](https://github.com/CapraLab/resources/blob/master/tutorials/directory_structure.md)
+
 ### Safe ```rm``` on ACCRE
 learn how to safely delete files on ACCRE\
 [here](https://github.com/CapraLab/resources/blob/master/tutorials/safer_rm.md)
