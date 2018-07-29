@@ -2,15 +2,12 @@ This directory includes useful tutorials and resources for working in the Capra 
 
 ## Tutorials
 ### Safe ```rm``` on ACCRE
-learn how to safely delete files on ACCRE 
-
+learn how to safely delete files on ACCRE\ 
 [how-to](https://github.com/CapraLab/resources/blob/master/tutorials/safer_rm.md)
 
 ### SLURM Scheduling
-tips and tricks for scheduling jobs (or: How not to be That Guy)
-
-presented originally by David Rinker and Mike Sivley
-
+tips and tricks for scheduling jobs (or: How not to be That Guy)\
+presented originally by David Rinker and Mike Sivley\
 [presentation](https://github.com/CapraLab/resources/blob/master/tutorials/slurm_scheduling.pdf)
 
 ### ACCRE virtual environment tutorial
