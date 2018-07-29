@@ -16,7 +16,7 @@ presented originally by Mary Lauren Benton, Ling Chen, and Laura Colbran\
 [presentation](https://github.com/CapraLab/resources/blob/master/tutorials/ACCRE_Environments.pdf)
 
 ### Jupyter Tutorial
-Tips and tricks for using Jupyter Notebooks\ 
+Tips and tricks for using Jupyter Notebooks\
 presented originally by Mary Lauren Benton, Ling Chen, and Laura Colbran\
 [here](http://nbviewer.jupyter.org/github/CapraLab/resources/blob/master/tutorials/jupyter_tutorial/jupyter_tutorial.html).
 
