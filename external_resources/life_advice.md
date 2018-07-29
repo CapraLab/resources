@@ -28,6 +28,6 @@ for a grant or a proposal
 
 Examples:\
 [NIH Applications](https://www.niaid.nih.gov/grants-contracts/sample-applications)\
-[Specific Aims Template](https://github.com/CapraLab/resources/blob/master/external_resources/Specific_Aims_Template.pdf)\
+[Specific Aims Template](https://github.com/CapraLab/resources/blob/master/external_resources/linked_files/Specific_Aims_Template.pdf)\
 [Successful Applications](https://github.com/RILAB/statements)\
 [Publically-avaiable list](https://jabberwocky.weecology.org/2012/08/10/a-list-of-publicly-available-grant-proposals-in-the-biological-sciences/)
