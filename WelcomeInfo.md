@@ -27,9 +27,9 @@ If you would like to be listed on the lab [web page](http://www.capralab.org/), 
 ## SCHEDULES
 I will add you to the lab's shared google calendar. This calendar is for meetings involving multiple members of the group and events potentially of interest to others. This calendar is not for events that only involve you. However, if you are going to be away for more than a day, please list that on the lab calendar.
 
-We have lab meeting from 4-5:15 on Thursday. We start with a round of quick updates from each person in the group. Following the updates, someone gives a longer update on their research project. If you are doing a temporary internship or rotation, you will give a summary presentation on your work the last week of your program.
+We have lab meeting from **4-5:15 on Thursday**. We start with a round of quick updates from each person in the group. Following the updates, someone gives a longer update on their research project. If you are doing a temporary internship or rotation, you will give a summary presentation on your work the last week of your program.
 
-We also have a weekly meeting to discuss recent research papers or other issues that we call Science Discussion Time every Tuesday from 4-5pm. I will send out the paper or other relevant materials by email before the meeting.
+We also have a weekly meeting to discuss recent research papers or other issues that we call Science Discussion Time every **Tuesday from 4-5pm**. I will send out the paper or other relevant materials by email before the meeting.
 
 I have weekly meetings with each member of the lab. You will attend these as appropriate. If you need to discuss something not related to an existing project, just email me to schedule a meeting about it. In general, I'm happy for you to stop by my office if the door is open, but there's a chance I may not be able to chat.
 
