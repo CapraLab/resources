@@ -3,7 +3,7 @@ This directory includes useful tutorials and resources for working in the Capra 
 ## Tutorials
 ### Safe ```rm``` on ACCRE
 learn how to safely delete files on ACCRE\
-[how-to](https://github.com/CapraLab/resources/blob/master/tutorials/safer_rm.md)
+[here](https://github.com/CapraLab/resources/blob/master/tutorials/safer_rm.md)
 
 ### SLURM Scheduling
 tips and tricks for scheduling jobs (or: How not to be That Guy)\
@@ -18,7 +18,7 @@ presented originally by Mary Lauren Benton, Ling Chen, and Laura Colbran\
 ### Jupyter Tutorial
 Tips and tricks for using Jupyter Notebooks\
 presented originally by Mary Lauren Benton, Ling Chen, and Laura Colbran\
-[here](http://nbviewer.jupyter.org/github/CapraLab/resources/blob/master/tutorials/jupyter_tutorial/jupyter_tutorial.html).
+[here](http://nbviewer.jupyter.org/github/CapraLab/resources/blob/master/tutorials/jupyter_tutorial/jupyter_tutorial.html)
 
 ### Git + Github tutorial 
 Tips and tricks for using Github for version-control\
@@ -27,15 +27,17 @@ presented originally by Greg Sliwoski\
 
 ### crontabs tutorial
 how to run jobs automatically\
-[how-to](https://github.com/CapraLab/resources/blob/master/tutorials/crontabs.md)
+[here](https://github.com/CapraLab/resources/blob/master/tutorials/crontabs.md)
 
 ### Mac set-up
 how to set up a Mac for programming and to use ACCRE\
-[how-to](https://github.com/CapraLab/resources/blob/master/tutorials/setup_Mac.md)
+[here](https://github.com/CapraLab/resources/blob/master/tutorials/setup_Mac.md)
 
+----
 ### coming soon:
 - advanced UNIX
 - good coding practices
 
+-----
 ## External Resources
 
