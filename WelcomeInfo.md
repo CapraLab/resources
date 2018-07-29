@@ -47,5 +47,5 @@ People in the lab are very friendly and eager to help, but please be respectful 
 - different programming languages: what should I learn for genetics?
 - hierarchy of the journals
 - glossary
-- setup mac for basic programming and scientific computing
+- setup Windows for basic programming and scientific computing
 - setting up a project directory
