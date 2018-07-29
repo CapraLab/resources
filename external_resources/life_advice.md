@@ -1,6 +1,9 @@
 # Good Life Advice
 Links to articles with advice about life as a scientist
 
+### For Undergrads
+[Getting the Most out of a Summer Internship](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005606)
+
 ### For Grad Students
 [Some Modest Advice for Graduate Students](https://stearnslab.yale.edu/some-modest-advice-graduate-students)\
 [Philip's Ph.D. Portal](http://pgbovine.net/phd.htm)- a collection of articles about doing a PhD\
@@ -25,4 +28,6 @@ for a grant or a proposal
 
 Examples:\
 [NIH Applications](https://www.niaid.nih.gov/grants-contracts/sample-applications)\
-[Specific Aims Template](https://github.com/CapraLab/resources/blob/master/external_resources/Specific_Aims_Template.pdf)
+[Specific Aims Template](https://github.com/CapraLab/resources/blob/master/external_resources/Specific_Aims_Template.pdf)\
+[Successful Applications](https://github.com/RILAB/statements)\
+[Publically-avaiable list](https://jabberwocky.weecology.org/2012/08/10/a-list-of-publicly-available-grant-proposals-in-the-biological-sciences/)
