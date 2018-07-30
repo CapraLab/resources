@@ -54,19 +54,19 @@ how to set up a Mac for programming and to use ACCRE\
 ## External Resources
 
 ### Life Advice
-primarily career and writing advice\
+career advice, writing resources, fun stuff\
 [here](https://github.com/CapraLab/resources/blob/master/external_resources/life_advice.md)
 
 ### Programming
-programming tutorials and resources\
+general resources, Python, R\
 [here](https://github.com/CapraLab/resources/blob/master/external_resources/programming.md)
 
 ### Statistics
-statistics tutorials and resources\
+basics, specific methods, Machine Learning\
 [here](https://github.com/CapraLab/resources/blob/master/external_resources/statistics.md)
 
 ### Genetics
-genetics tutorials and resources\
+general resources, GWAS, Fst\
 [here](https://github.com/CapraLab/resources/blob/master/external_resources/genetics.md)
 
 #### linked_files
