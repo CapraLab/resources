@@ -16,17 +16,17 @@ tips and tricks for scheduling jobs (or: How not to be That Guy)\
 presented originally by David Rinker and Mike Sivley\
 [presentation](https://github.com/CapraLab/resources/blob/master/tutorials/slurm_scheduling.pdf)
 
-### ACCRE virtual environment tutorial
+### ACCRE virtual environments
 How and why to use Conda on ACCRE\
 presented originally by Mary Lauren Benton, Ling Chen, and Laura Colbran\
 [presentation](https://github.com/CapraLab/resources/blob/master/tutorials/ACCRE_Environments.pdf)
 
-### Jupyter Tutorial
+### Jupyter
 Tips and tricks for using Jupyter Notebooks\
 presented originally by Mary Lauren Benton, Ling Chen, and Laura Colbran\
 [here](http://nbviewer.jupyter.org/github/CapraLab/resources/blob/master/tutorials/jupyter_tutorial/jupyter_tutorial.html)
 
-### Git + Github tutorial 
+### Git + Github 
 Tips and tricks for using Github for version-control\
 presented originally by Greg Sliwoski\
 [presentation](https://github.com/CapraLab/resources/blob/master/tutorials/git_github_tutorial/giterdone_git_tutorial.pdf) and [cheatsheet](https://github.com/CapraLab/resources/blob/master/tutorials/git_github_tutorial/git-cheatsheet.pdf)
@@ -37,7 +37,7 @@ Good external tutorials:
 - [Atlassian](https://www.atlassian.com/git/tutorials/)
 - [Pro Git](http://git-scm.com/book/en/v2/)
 
-### crontabs tutorial
+### crontabs
 how to run jobs automatically\
 [here](https://github.com/CapraLab/resources/blob/master/tutorials/crontabs.md)
 
@@ -53,3 +53,21 @@ how to set up a Mac for programming and to use ACCRE\
 -----
 ## External Resources
 
+### Life Advice
+primarily career and writing advice\
+[here](https://github.com/CapraLab/resources/blob/master/external_resources/life_advice.md)
+
+### Programming
+programming tutorials and resources\
+[here](https://github.com/CapraLab/resources/blob/master/external_resources/programming.md)
+
+### Statistics
+statistics tutorials and resources\
+[here](https://github.com/CapraLab/resources/blob/master/external_resources/statistics.md)
+
+### Genetics
+genetics tutorials and resources\
+[here](https://github.com/CapraLab/resources/blob/master/external_resources/genetics.md)
+
+#### linked_files
+contains files linked to by tutorials in this directory
