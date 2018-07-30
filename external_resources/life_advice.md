@@ -32,7 +32,7 @@ Examples:\
 [NIH Applications](https://www.niaid.nih.gov/grants-contracts/sample-applications)\
 [Specific Aims Template](https://github.com/CapraLab/resources/blob/master/external_resources/linked_files/Specific_Aims_Template.pdf)\
 [Successful Applications](https://github.com/RILAB/statements)\
-[Publically-avaiable list](https://jabberwocky.weecology.org/2012/08/10/a-list-of-publicly-available-grant-proposals-in-the-biological-sciences/)
+[Publicly-available list](https://jabberwocky.weecology.org/2012/08/10/a-list-of-publicly-available-grant-proposals-in-the-biological-sciences/)
 
 ### Fun Stuff
 [Interviews with Notable Bioinformaticians](http://www.acgt.me/blog/2014/3/25/101-questions-a-new-series-of-interviews-with-notable-bioinformaticians)\
