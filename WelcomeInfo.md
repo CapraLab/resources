@@ -24,6 +24,8 @@ You should now also be able to access ```/dors/capra_lab``` via the "Map Network
 
 When you're working on the linux servers, if you find that you don't have access to a piece of software or a package that you need, you may just need to configure your account to use it. See ACCRE's page on [Lmod](https://www.vanderbilt.edu/accre/documentation/lmod/) for instructions on how to search and load packages. 
 
+It is also important to keep your filesystem organized. See the [project directory](https://github.com/CapraLab/resources/blob/master/tutorials/directory_structure.md) tutorial for the Capra Lab standard directory structure.
+
 ## PRINTING
 There's a new color duplex printer in the lab. It can also scan and copy. For its IP address and info on setting it up, see the notecard above the printers.
 
@@ -48,4 +50,3 @@ People in the lab are very friendly and eager to help, but please be respectful 
 - hierarchy of the journals
 - glossary
 - setup Windows for basic programming and scientific computing
-- setting up a project directory
