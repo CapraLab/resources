@@ -47,9 +47,13 @@ how to run jobs automatically\
 how to set up a Mac for programming and to use ACCRE\
 [here](https://github.com/CapraLab/resources/blob/master/tutorials/setup_Mac.md)
 
+### Advanced Unix: Tips & Tricks
+useful commands (`sed`, `awk`, `grep`, etc.) regular expressions, and bash scripting\
+presented originally by Mary Lauren Benton
+[here](https://github.com/CapraLab/resources/blob/master/tutorials/adv_unix_tutorial/bin/AdvancedUnixTutorial.ipynb)
+
 ----
 ### coming soon:
-- advanced UNIX
 - good coding practices
 
 -----
