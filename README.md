@@ -1,8 +1,10 @@
-This directory includes useful tutorials and resources for working in the Capra lab. It can also be found on ACCRE at ```/dors/capra_lab/resources/```.
+This repository includes useful tutorials and resources for working in the Capra lab. It can also be found on ACCRE at ```/dors/capra_lab/resources/```.
 
 See an overall Intro to the Capra Lab [here](https://github.com/CapraLab/resources/blob/master/WelcomeInfo.md).
 
 ## Tutorials
+tutorials made for ourselves
+
 ### Project directory structure
 Tony's rules on how to set up a project directory
 [here](https://github.com/CapraLab/resources/blob/master/tutorials/directory_structure.md)
@@ -52,6 +54,7 @@ how to set up a Mac for programming and to use ACCRE\
 
 -----
 ## External Resources
+resources from around the web
 
 ### Life Advice
 career advice, writing resources, fun stuff\
