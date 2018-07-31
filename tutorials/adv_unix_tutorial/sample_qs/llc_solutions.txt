@@ -1,0 +1,33 @@
+1. The GWAS Catalog file I made has an unknown spacing/delimiter problem… whoops.
+      Can you find and fix it without going through all 200 lines by hand?
+    cat -vet $FILE
+    awk -v OFS="\t" '$1=$1' $FILE #replaces ALL whitespace with tabs. bad for this file.
+    awk '{printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n",$1,$2,$3,$4,$5,$6,$7,$8,$9,$10 }' #long way of doing it
+    sed 's/ \+/\t/' #will also do this; add g to replace all occurrences on a line rather than first
+
+2. What if I’m interested in a SNP with rsID = rs139770682.
+              What phenotype is that associated with?
+        less gwasCatalog_2018-04-01_hg38_n-200.bed |grep rs139770682
+
+3. Maybe we want to limit our results by ancestry. Try pulling out only
+          associations found in individuals of European or African descent.
+      less gwasCatalog_2018-04-01_hg38_n-200.bed |grep European > gwas_euro.bed
+	grep '[^NR,]\sEuropean(;European)*?\s' #grabs just European and European;European lines
+
+4. I want to compare some enhancer identification methods in brain. If the enhancer
+      states from ChromHMM we're interested in are denoted by EnhA1, EnhA2, and EnhWk,
+      how could we filter for just those regions? Try to create a BED6 file with the
+      following columns: [ chr ] [ start ] [ end ] [ name/state ] [ score ] [ strand ].
+      Since we don’t have a score or strand, put in the traditional placeholder value
+      (‘.’). Note that the possible ChromHMM states are: TssA, TssFlnk, TssFlnkU,
+      TssFlnkD, Tx, TxWk, EnhG1, EnhG2, EnhA1, EnhA2, EnhWk, ZNF/Rpts, Het, TssBiv,
+      EnhBiv, ReprPC, ReprPCWk, Quies.
+   grep 'EnhA1\|EnhA2\|EnhWk' E073_18_core_K27ac_mnemonics.bed | awk '{printf "%s\t%s\t%s\t%s\t.\t.\n",$1,$2,$3,$4}' > E073_18_core_K27ac_mnemonics.bed6
+
+5. Finally, let’s look at the GTF file. If I tell you that the important columns
+    are 1 (chromosome), 4 (start; 1-based), 5 (end), 7 (strand), 10 (ensemble ID),
+    and 16 (gene biotype),  create a BED6 file of gene features (where column 3 == ‘gene’)
+    in the following order: [ chr ] [ start ] [ end ] [ ensembl ID ] [ gene biotype ]
+    [ strand ]. Oh— and let’s add a ‘chr’ prefix to the chromosome number and
+    remove chromosomes other than 1-22, X, or Y.
+  less Homo_sapiens.GRCh37.75.gtf.gz | grep -v 'HSCHR\|HG\|GL\|MT' | awk '/^#/{print} !/^#/{printf "chr%s\t%s\t%s\t%s\t%s\t%s\n",$1,$4-1,$5,$10,$16,$7}' > Homo_sapiens.GRCh37.75_filtered.gtf

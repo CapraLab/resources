@@ -1,0 +1,64 @@
+# questions assigned for tutorial
+# created | 2018.07.23
+
+Check out the sample data files we'll be using in the tutorial:
+    - random set of sample lines from the GWAS catalog (n = 200)
+    - BED file generated from the 18-state ChromHMM model run by Roadmap Epigenomics
+    - GTF file from Ensembl for GRCh37.75
+
+###
+#  1
+###
+The GWAS Catalog file I made has an unknown spacing/delimiter problem… whoops.
+Can you find and fix it without going through all 200 lines by hand?
+
+
+###
+#  2
+###
+What if I’m interested in a SNP with rsID = rs139770682.
+What phenotype is that associated with?
+
+
+###
+#  3
+###
+Maybe we want to limit our results by ancestry.
+Try pulling out only associations found in individuals of European or African descent.
+
+
+###
+#  4
+###
+I want to compare some enhancer identification methods in brain.
+The enhancer states from ChromHMM we're interested in are denoted by EnhA1, EnhA2, and EnhWk.
+How could we filter for just those regions?
+
+Try to create a BED6 file with the following columns:
+    [ chr ] [ start ] [ end ] [ name/state ] [ score ] [ strand ].
+
+Since we don’t have a score or strand, put in the traditional placeholder value ('.').
+
+Note that the possible ChromHMM states are:
+    TssA, TssFlnk, TssFlnkU, TssFlnkD, Tx, TxWk, EnhG1, EnhG2, EnhA1, EnhA2,
+    EnhWk, ZNF/Rpts, Het, TssBiv, EnhBiv, ReprPC, ReprPCWk, Quies
+
+
+###
+#  5
+###
+Finally, let's look at the GTF file.
+
+I'll tell you that the important columns are:
+    1 (chromosome),
+    4 (start; 1-based),
+    5 (end),
+    7 (strand),
+    10 (ensemble ID), and
+    16 (gene biotype)
+
+Create a BED6 file of gene features (where column 3 == 'gene') in the following order:
+    [ chr ] [ start ] [ end ] [ ensembl ID ] [ gene biotype ] [ strand ].
+
+Oh— and let’s add a 'chr' prefix to the chromosome number and remove chromosomes other than 1-22, X, or Y.
+
