@@ -49,12 +49,13 @@ how to set up a Mac for programming and to use ACCRE\
 
 ### Advanced Unix: Tips & Tricks
 useful commands (`sed`, `awk`, `grep`, etc.) regular expressions, and bash scripting\
-presented originally by Mary Lauren Benton
+presented originally by Mary Lauren Benton\
 [here](https://github.com/CapraLab/resources/blob/master/tutorials/adv_unix_tutorial/bin/AdvancedUnixTutorial.ipynb)
 
-----
-### coming soon:
-- good coding practices
+### Good Coding Practices
+Tips for keeping your code understandable (comments, functions, argument parsing, etc.)\
+presented originally by Laura Colbran and Mary Lauren Benton\
+[here](https://github.com/CapraLab/resources/blob/master/tutorials/good_coding_practices/Good_Coding.pdf)
 
 -----
 ## External Resources
