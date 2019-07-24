@@ -62,7 +62,7 @@ presented originally by Laura Colbran and Mary Lauren Benton\
 resources from around the web
 
 ### Life Advice
-career advice, writing resources, fun stuff\
+career advice, writing resources, grant text, fun stuff\
 [here](https://github.com/CapraLab/resources/blob/master/external_resources/life_advice.md)
 
 ### Programming
