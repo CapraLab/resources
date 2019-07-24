@@ -35,7 +35,7 @@ Examples:\
 [Publicly-available list](https://jabberwocky.weecology.org/2012/08/10/a-list-of-publicly-available-grant-proposals-in-the-biological-sciences/)
 
 ### Grant resources
-[Grant ready text for Facilities/Equipment](https://www.vumc.org/oor/vumc-grant-ready-text)
+[Grant ready text for Facilities/Equipment](https://www.vumc.org/oor/vumc-grant-ready-text)\
 [Grant writing resources from VUMC](https://www.vumc.org/oor/tools-grant-writing)
 
 ### Fun Stuff
