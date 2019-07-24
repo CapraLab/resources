@@ -34,6 +34,10 @@ Examples:\
 [Successful Applications](https://github.com/RILAB/statements)\
 [Publicly-available list](https://jabberwocky.weecology.org/2012/08/10/a-list-of-publicly-available-grant-proposals-in-the-biological-sciences/)
 
+### Grant resources
+[Grant ready text for Facilities/Equipment](https://www.vumc.org/oor/vumc-grant-ready-text)
+[Grant writing resources from VUMC](https://www.vumc.org/oor/tools-grant-writing)
+
 ### Fun Stuff
 [Interviews with Notable Bioinformaticians](http://www.acgt.me/blog/2014/3/25/101-questions-a-new-series-of-interviews-with-notable-bioinformaticians)\
 [xkcd](https://xkcd.com/)- A webcomic of romance, sarcasm, math, and language (with CS and science thrown in)\
