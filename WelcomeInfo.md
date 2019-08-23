@@ -16,13 +16,13 @@ ACCRE accounts are sometimes improperly configured even when you put the proper 
 
 If you would like to access ACCRE from off campus you will need to login via the Vanderbilt Virtual Private Network (VPN). Details [here](https://it.vanderbilt.edu/security/secure-communications/remote-access/).
 
-In addition to the normal ACCRE gateway nodes, we have access to a separate gateway used only by the Vanderbilt Genetics Institute. These are located at ```chgr1.accre.vanderbilt.edu``` (or ```chgr2```...). We recommend using them becuase they're more lightly trafficked and allow you more freedom that ACCRE's default gateway nodes. You should use the SLURM job submission system (see ACCRE tutorials) for running jobs that you expect to take longer than ~15 minutes or require lots of resources.
+In addition to the normal ACCRE gateway nodes, we have access to a separate gateway used only by the Vanderbilt Genetics Institute. This is located at ```vgi01.accre.vanderbilt.edu```. It allows you more freedom that ACCRE's default gateway nodes. You should use the SLURM job submission system (see ACCRE tutorials) for running jobs that you expect to take longer than ~15 minutes or require lots of resources.
 
-Your ACCRE account is associated with a small amount of storage. However, since we often analyze large data sets, the group also has several TB of shared storage space on storage system called DORS. The DORS system is separate from ACCRE, but is accessible in the ```/dors/capra_lab/``` directory on any ACCRE machine, and is where the data, programs, and results for most projects are stored. Files stored on your ACCRE account and our lab's space on the DORS storage system can be mounted (accessed) locally on your own computer via SAMBA or via FTP. See the relevant note in the "Capra Lab Resources" notebook on Evernote for instructions. In general, most of your files should be stored in the relevant directory (```/dors/capra_lab/projects/your_project_name/``` or in ```/dors/capra_lab/your_vunetid/```).
+Your ACCRE account is associated with a small amount of storage. However, since we often analyze large data sets, the group also has several TB of shared storage space on storage system called DORS. The DORS system is separate from ACCRE, but is accessible in the ```/dors/capra_lab/``` directory on any ACCRE machine, and is where the data, programs, and results for most projects are stored. Files stored on your ACCRE account and our lab's space on the DORS storage system can be mounted (accessed) locally on your own computer via SAMBA or via FTP. See the relevant note in the "Capra Lab Resources" notebook on Evernote for instructions. In general, most of your files should be stored in the relevant directory (```/dors/capra_lab/projects/your_project_name/``` or in ```/dors/capra_lab/users/your_vunetid/```).
 
 You should now also be able to access ```/dors/capra_lab``` via the "Map Network Drive" in Windows with the address ```\\mako-smb.its.vanderbilt.edu\capra_lab``` or under the "Connect to Server…" menu item in the Mac Finder with the address ( ). This will give you access to the same directories you find on the linux servers at ```/dors/capra_lab```.
 
-When you're working on the linux servers, if you find that you don't have access to a piece of software or a package that you need, you may just need to configure your account to use it. See ACCRE's page on [Lmod](https://www.vanderbilt.edu/accre/documentation/lmod/) for instructions on how to search and load packages. 
+When you're working on the linux servers, if you find that you don't have access to a piece of software or a package that you need, you may just need to configure your account to use it. See ACCRE's page on [Lmod](https://www.vanderbilt.edu/accre/documentation/lmod/) for instructions on how to search and load packages. ```/dors/capra_lab/bin/``` also contains many packages that a lot of us use. Add the line ```export PATH=$PATH:/dors/capra_lab/bin``` to your bash_profile (```~/.bash_profile```) to run these easily.
 
 It is also important to keep your filesystem organized. See the [project directory](https://github.com/CapraLab/resources/blob/master/tutorials/directory_structure.md) tutorial for the Capra Lab standard directory structure.
 
@@ -35,14 +35,14 @@ If you would like to be listed on the lab [web page](http://www.capralab.org/), 
 ## SCHEDULES
 I will add you to the lab's shared google calendar. This calendar is for meetings involving multiple members of the group and events potentially of interest to others. This calendar is not for events that only involve you. However, if you are going to be away for more than a day, please list that on the lab calendar.
 
-We have lab meeting from **4-5:15 on Thursday**. We start with a round of quick updates from each person in the group. Following the updates, someone gives a longer update on their research project. If you are doing a temporary internship or rotation, you will give a summary presentation on your work the last week of your program.
+We have lab meeting from **4-5:15 on Thursday**. We start with a round of optional quick updates from each person in the group. Following the updates, someone gives a longer update on their research project. If you are doing a temporary internship or rotation, you will give a summary presentation on your work the last week of your program.
 
 We also have a weekly meeting to discuss recent research papers or other issues that we call Science Discussion Time every **Tuesday from 4-5pm**. I will send out the paper or other relevant materials by email before the meeting.
 
 I have weekly meetings with each member of the lab. You will attend these as appropriate. If you need to discuss something not related to an existing project, just email me to schedule a meeting about it. In general, I'm happy for you to stop by my office if the door is open, but there's a chance I may not be able to chat.
 
 ## ASKING FOR HELP
-People in the lab are very friendly and eager to help, but please be respectful of their time when you are starting out and have lots of questions. Try to solve any problems you are having before asking for help. Googling the problem first will often yield a solution. If not, email me or the grad student you think can help to ask if they have a moment.
+People in the lab are very friendly and eager to help, but please be respectful of their time when you are starting out and have lots of questions. Make an effort to solve any problems you are having before asking for help. Googling the problem first will often yield a solution. If not, email me or the grad student you think can help to ask if they have a moment.
 
 
 ## COMING SOON:
