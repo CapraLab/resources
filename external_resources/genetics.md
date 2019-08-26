@@ -21,6 +21,7 @@ resources for common genetic analyses
 [plink tutorial](www.ru.nl/publish/pages/669642/congenomics_plink_tutorial_davey.pdf)\
 [plink examples](https://www.cog-genomics.org/plink2/resources#teach)\
 [plink documentation](https://www.cog-genomics.org/plink2/general_usage)
+[Another Tutorial](https://github.com/CapraLab/resources/tree/master/external_resources/GWA_tutorial)
 
 ## Fst
 [Definitions, Methods](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0042649)\
