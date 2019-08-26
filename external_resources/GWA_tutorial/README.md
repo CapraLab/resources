@@ -1,6 +1,6 @@
 GWA tutorial
 -------------------------------------------------------------------------------------------------------------
-
+Copied from [here](https://github.com/MareesAT/GWA_tutorial)
 
 This GitHub page provides several tutorials about techniques used to analyze genetic data. 
 Underneath this README we have provided a step-by-step guide to help researchers without experience in Unix to complete these tutorials succesfully. For reseachers familiar with Unix this README will probably be sufficient.
