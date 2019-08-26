@@ -57,6 +57,9 @@ Tips for keeping your code understandable (comments, functions, argument parsing
 presented originally by Laura Colbran and Mary Lauren Benton\
 [here](https://github.com/CapraLab/resources/blob/master/tutorials/good_coding_practices/Good_Coding.pdf)
 
+### How to keep track of your code
+[here](https://github.com/CapraLab/resources/blob/master/tutorials/reproducible_coding.md)
+
 -----
 ## External Resources
 resources from around the web
