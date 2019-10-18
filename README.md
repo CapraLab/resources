@@ -23,6 +23,9 @@ How and why to use Conda on ACCRE\
 presented originally by Mary Lauren Benton, Ling Chen, and Laura Colbran\
 [presentation](https://github.com/CapraLab/resources/blob/master/tutorials/ACCRE_Environments.pdf)
 
+Setting up conda environments on DORS\
+[here](https://github.com/CapraLab/resources/blob/master/tutorials/conda_envs_dors.md)
+
 ### Jupyter
 Tips and tricks for using Jupyter Notebooks\
 presented originally by Mary Lauren Benton, Ling Chen, and Laura Colbran\
