@@ -1,52 +1,41 @@
 # Welcome to the Capra Lab!
-Here's some introductory information that you'll need. Feel free to ask me or other people in the lab as you have questions. This information is also available in the "Capra Lab Resources" Evernote.
+Welcome to the Capra Lab! Here's some introductory information that you'll need. Feel free to ask me or other people in the lab as you have questions. We also have a GitHub repository with tutorials and resources: https://github.com/CapraLab/resources
 
 ## ACCESS
-First, you'll need to get a key to the lab from the Biological Sciences office. It is located on the first floor of MRBIII (our building). I will send a separate email introducing you to the administrative staff and requesting the key. YOU MUST LOCK THE DOOR IF YOU NO ONE ELSE IS IN THE LAB. Keys must be returned on your last day.
+Our lab space is on the second floor of the Valley Tower in the Bakar Computational Health Sciences Institute. For card acces to the building and our space, email Andrew Jan and Edna Rodas. The space is new and, with most of working remotely, the assignment of desks is somewhat in flux. Ask Tony or another lab member about where to sit when you arrive.
+
+## SLACK
+We use slack to share information, jokes, and chat. I will send you an invite.
 
 ## LAB NOTEBOOKS
-We use a program called [Evernote](https://evernote.com/) to keep track of progress on projects in the lab. You'll need to download Evernote and setup an account. A basic account is fine for how we use it. I'll share relevant project notebooks with you so that you can access and edit them. We also have a "Capra Lab Resources" notebook with useful information about the lab.
+We use a program called Notion (https://www.notion.so/) to keep track of progress on projects in the lab. You'll need to download Notion and setup an account. Academic accounts can get the Personal Pro Plan for free. Please create a note and share it with me (my first name dot last name AT vanderbilt.edu). 
 
 ## COMPUTING
-Much of our computational work is done on Vanderbilt's [ACCRE](http://www.accre.vanderbilt.edu/) computer cluster. This is a group of thousands of computers running the linux operating system that are set up to run large analyses. Fill out the form [here](http://www.accre.vanderbilt.edu/?page_id=617) to get an ACCRE account. You should select the “capra_lab" group and note that "My account should have capra_lab as its main group on ACCRE and DORS. I would also like SAMBA access." in the "Other Useful Information Box." If you are a temporary student (e.g., summer intern or rotation student) please also note your end date in this box. Don't stress out if you don't know the answer to all the questions on the form, just put a reasonable guess or ask me. NOTE: YOUR ACCRE ACCOUNT AND PASSWORD WILL BE DIFFERENT FROM YOUR VUNET PASSWORD.
+We use UCSF’s Wynton compute cluster ([https://wynton.ucsf.edu/](https://wynton.ucsf.edu/hpc/about/join.html)) for many of our projects. If you don’t already have a Wynton account, please set one up by following the instructions here: [https://wynton.ucsf.edu/hpc/about/join.html](https://wynton.ucsf.edu/hpc/about/join.html). Let them know that you'll need to be in the `capra` group.
 
-If you are not familiar with unix/linux and cluster computing, ACCRE has lots of information and slide presentations available on its [web site](http://www.accre.vanderbilt.edu/?page_id=377). You will also be required to take an orientation class within the first few months of creating your account. You can log into ACCRE using a protocol called SSH; see the ACCRE slides or google for more info. We also have tutorials on UNIX and other useful things on the Capra lab Resources GitHub, or here: ```/dors/capra_lab/resources```.
-  
-ACCRE accounts are sometimes improperly configured even when you put the proper information in the form. To check that your new account has the proper group associations, log in and type "groups."  The result should read "capra_lab vgi". It is possible that you'll have a few other groups, but those should be included in that order. If not, you won't be able to access our data properly, so you'll need to file a help ticket with ACCRE to correct this.
+We have lab storage and data available here:
+`/wynton/group/capra/`
 
-If you would like to access ACCRE from off campus you will need to login via the Vanderbilt Virtual Private Network (VPN). Details [here](https://it.vanderbilt.edu/security/secure-communications/remote-access/).
-
-In addition to the normal ACCRE gateway nodes, we have access to a separate gateway used only by the Vanderbilt Genetics Institute. This is located at ```vgi01.accre.vanderbilt.edu```. It allows you more freedom that ACCRE's default gateway nodes. You should use the SLURM job submission system (see ACCRE tutorials) for running jobs that you expect to take longer than ~15 minutes or require lots of resources.
-
-Your ACCRE account is associated with a small amount of storage. However, since we often analyze large data sets, the group also has several TB of shared storage space on storage system called DORS. The DORS system is separate from ACCRE, but is accessible in the ```/dors/capra_lab/``` directory on any ACCRE machine, and is where the data, programs, and results for most projects are stored. Files stored on your ACCRE account and our lab's space on the DORS storage system can be mounted (accessed) locally on your own computer via SAMBA or via FTP. See the relevant note in the "Capra Lab Resources" notebook on Evernote for instructions. In general, most of your files should be stored in the relevant directory (```/dors/capra_lab/projects/your_project_name/``` or in ```/dors/capra_lab/users/your_vunetid/```).
-
-You should now also be able to access ```/dors/capra_lab``` via the "Map Network Drive" in Windows with the address ```\\mako-smb.its.vanderbilt.edu\capra_lab``` or under the "Connect to Server…" menu item in the Mac Finder with the address ( ). This will give you access to the same directories you find on the linux servers at ```/dors/capra_lab```.
-
-When you're working on the linux servers, if you find that you don't have access to a piece of software or a package that you need, you may just need to configure your account to use it. See ACCRE's page on [Lmod](https://www.vanderbilt.edu/accre/documentation/lmod/) for instructions on how to search and load packages. ```/dors/capra_lab/bin/``` also contains many packages that a lot of us use. Add the line ```export PATH=$PATH:/dors/capra_lab/bin``` to your bash_profile (```~/.bash_profile```) to run these easily.
+Also, check out the database of bioinformatics datasets here:
+`/wynton/group/databases/`
 
 It is also important to keep your filesystem organized. See the [project directory](https://github.com/CapraLab/resources/blob/master/tutorials/directory_structure.md) tutorial for the Capra Lab standard directory structure, and have a look at these tips for [coding workflows](https://github.com/CapraLab/resources/blob/master/tutorials/reproducible_coding.md).
-
-## PRINTING
-There's a new color duplex printer in the lab. It can also scan and copy. For its IP address and info on setting it up, see the notecard above the printers.
 
 ## WEB PAGE
 If you would like to be listed on the lab [web page](http://www.capralab.org/), please send me a photo and a brief description of your background and interests.
 
 ## SCHEDULES
-I will add you to the lab's shared google calendar. This calendar is for meetings involving multiple members of the group and events potentially of interest to others. This calendar is not for events that only involve you. However, if you are going to be away for more than a day, please list that on the lab calendar.
+I will add you to the lab's shared google calendar. This calendar is for meetings involving multiple members of the group and events potentially of interest to others. This calendar is not for events that only involve you. However, if you are going to be away for more than a day, please list that on the lab calendar. We also have a “Capra Lab Relevant Seminars” calendar where we post seminars that might be of interest to the group.
 
-We have lab meeting from **4-5:15 on Thursday**. We start with a round of optional quick updates from each person in the group. Following the updates, someone gives a longer update on their research project. If you are doing a temporary internship or rotation, you will give a summary presentation on your work the last week of your program.
+We have lab meeting from **1:30-3 Pacific on Thursdays**. We start with a round of quick updates from each person in the group. Following the updates, someone gives a longer update on their research project. If you are doing a temporary internship or rotation, you will give a summary presentation on your work the last week of your program.
 
-We also have a weekly meeting to discuss recent research papers or other issues that we call Science Discussion Time every **Tuesday from 4-5pm**. I will send out the paper or other relevant materials by email before the meeting.
+We also have a weekly meeting to discuss recent research papers or other issues that we call Science Discussion Time every **Tuesday from 2-3 Pacific**. I will send out the paper or other relevant materials by email before the meeting.
 
-I have weekly meetings with each member of the lab. You will attend these as appropriate. If you need to discuss something not related to an existing project, just email me to schedule a meeting about it. In general, I'm happy for you to stop by my office if the door is open, but there's a chance I may not be able to chat.
+Each week I make hours of "Tony Open Meeting Time" available. This can be booked by creating an event with your name and a zoom link. If you need less than the full time window, please leave the remaining open time available. If you need to discuss something and no meeting times are available, just email me to schedule a meeting about it. In general, I'm happy for you to stop by my office if the door is open, but there's a chance I may not be able to chat.
 
 ## ASKING FOR HELP
-People in the lab are very friendly and eager to help, but please be respectful of their time when you are starting out and have lots of questions. Make an effort to solve any problems you are having before asking for help. Googling the problem first will often yield a solution. If not, email me or the grad student you think can help to ask if they have a moment.
+People in the lab are very friendly and eager to help, but please be respectful of their time when you are starting out and have lots of questions. Try to solve any problems you are having before asking for help. Googling the problem first will often yield a solution. If not, email me or the lab member you think can help to ask if they have a moment.
 
+We are looking forward to working with you!
 
-## COMING SOON:
-- different programming languages: what should I learn for genetics?
-- hierarchy of the journals
-- glossary
-- setup Windows for basic programming and scientific computing
+Tony
