@@ -5,6 +5,14 @@
 [Regular Expression Cheatsheet](https://github.com/CapraLab/resources/blob/master/external_resources/linked_files/regex_cheatsheet.png)\
 [regex 101](https://regex101.com/)- interactive regex constructor
 
+## Command Line
+Here are several tutorials of varying length and level on learning the command line (how you will interact with Wynton):\
+http://learnpythonthehardway.org/book/appendixa.html \
+http://zarlab.cs.ucla.edu/serghei-manguls-introduction-to-unix-workshops/ \
+http://swcarpentry.github.io/shell-novice/ \
+http://www.doc.ic.ac.uk/~wjk/UnixIntro/
+
+
 ## Python
 #### Getting Started
 [Think Python](http://www.greenteapress.com/thinkpython/thinkpython.pdf)\
